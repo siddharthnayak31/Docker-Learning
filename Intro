@@ -1,0 +1,97 @@
+1️⃣ Docker Introduction
+👉 What is Docker?
+
+Docker is a tool that helps you:
+
+Package + Run applications in isolated environments called containers
+
+🧠 Simple Example:
+
+Instead of saying:
+
+“Install Java”
+“Install MySQL”
+“Set environment variables”
+
+👉 You just say:
+
+“Run my Docker container”
+
+And everything works 💯
+
+🚨 Why Docker?
+
+Because:
+
+"It works on my machine" problem ❌
+Different OS issues ❌
+Dependency conflicts ❌
+2️⃣ Problem We Are Trying To Solve
+❌ Problems before Docker:
+Different environments:
+Dev → Test → Prod (all different)
+Dependency issues:
+Java 8 vs Java 17
+Different libraries
+Installation pain:
+Setup takes hours
+🧠 Real Example:
+
+You build Spring Boot app → works locally
+But on server → crashes 😵
+
+3️⃣ Solution with Virtualization (VM)
+👉 What is VM?
+
+A Virtual Machine is:
+
+A full computer inside your computer
+
+Structure:
+Hardware
+  ↓
+Hypervisor
+  ↓
+VM (OS + App)
+✅ Advantages:
+Isolation ✔️
+Multiple OS ✔️
+❌ Problems:
+Heavy (GBs of size)
+Slow startup
+Each VM has full OS
+4️⃣ Solution with Containerization
+👉 What is Container?
+
+Lightweight environment that shares OS kernel
+
+Structure:
+Hardware
+  ↓
+Host OS
+  ↓
+Docker
+  ↓
+Containers (App + Dependencies)
+✅ Advantages:
+Lightweight ⚡
+Fast 🚀
+Portable 💯
+🔥 Key Difference:
+Feature	VM	Container
+Size	Large	Small
+OS	Full OS	Shared OS
+Speed	Slow	Fast
+5️⃣ What is Docker (Deep)
+👉 Docker = Platform for Containerization
+🧩 Main Components:
+Docker Engine
+Core runtime
+Docker Image
+Blueprint (like class)
+Docker Container
+Running instance (like object)
+Docker Hub
+Online storage for images
+🧠 Flow:
+Dockerfile → Image → Container
